@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="CSS/style.css" />
+    <link rel="stylesheet" href="CSS/resp.css" />
+    <title>Employee CRUD - SACHIN THAK</title>
+  </head>
+  <body>
+    <nav id="navbar">
+      <h1>Employee Data</h1>
+    </nav>
+    <section class="menu_section">
+      <div class="left_menu">
+        <button class="btn" id="add_btn">
+          <i class="fa-solid fa-plus"></i> Add Employee
+        </button>
+        <button class="btn" id="clr-btn">
+          <i class="fa-solid fa-eraser"></i> Clear All Data
+        </button>
+        <input type="checkbox" id="check">
+      </div>
+
+      <div class="right_menu">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input type="text" id="search_id" />
+        <button class="sBtn">Search</button>
+      </div>
+    </section>
+
+    <main>
+      <table class="table table-bordered border-dark">
+        <tr>
+          <th>SR.NO</th>
+          <th>Porfile</th>
+          <th>Id</th>
+          <th>Full Name</th>
+          <th>E-Mail</th>
+          <th>Office Code</th>
+          <th>Job Title</th>
+          <th>Action</th>
+        </tr>
+
+        <tbody id="table-data">
+          
+        </tbody>
+      </table>
+    </main>
+
+    <section class="form_section">
+      <div class="card">
+        <i class="fa-solid fa-xmark" id="close"></i>
+        <div class="header">
+          <h2 class="text-center">Employee Details form</h2>
+        </div>
+        <div class="card-body">
+          <div class="left">
+            <div>
+              <img
+                src="/img/maintenance.png"
+                alt="Profile Pic"
+                height="100"
+                width="100"
+                id="profilePic"
+              />
+              <div class="flex">
+                <input type="file" id="file" />
+                <i class="fa-solid fa-plus" id="plus"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="right">
+            <form class="form" id="registrationForm">
+              <label for="emp_id">Id</label>
+              <input type="text" id="emp_id" required />
+
+              <label for="emp_name">Name</label>
+              <input type="text" id="emp_name" required />
+
+              <label for="emp_email">Email</label>
+              <input type="email" id="emp_email" required />
+
+              <label for="emp_offc">Office Code</label>
+              <input type="text" id="emp_offc" required />
+
+              <label for="emp_jobt">Job Title</label>
+              <input type="text" id="emp_jobt" required />
+            </form>
+            <div class="form_btn">
+              <button class="reg_btn">Register</button>
+              <button class="up_btn" disabled="disabled">Update</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    
+
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="/JS/script.js"></script>
+  </body>
+</html>
