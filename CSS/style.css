@@ -1,0 +1,234 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  width: 100%;
+}
+
+
+#navbar{
+  background-color: red;
+  height: 65px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+  color: #fff;
+}
+
+.menu_section{
+  width: 100%;
+  padding:10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.menu_section .left_menu{
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  width: 50%;
+}
+
+.menu_section .left_menu .btn{
+  font-size: 25px;
+  padding: 10px 5px;
+  background-color: rgb(127, 127, 253);
+  color: #fff;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+#check{
+  width: 30px;
+  height: 30px;
+}
+
+.right_menu{
+  width: 50%;
+}
+
+.right_menu i{
+  font-size: 25px;
+}
+
+.right_menu input{
+  font-size: 1rem;
+  padding: 8px;
+  border: none;
+  outline: none;
+  width: 70%;
+  background-color: transparent;
+  border-bottom: 4px solid rgb(104, 174, 243);
+}
+
+.right_menu .sBtn{
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 10px;
+  width: 20%;
+  border: none;
+  background-color: rgb(246, 107, 107);
+  border-radius: 8px;
+  color: #fff;
+  cursor: pointer;
+}
+
+main{
+  padding: 10px;
+  text-align: center;
+}
+
+table tbody td button{
+  font-size: 16px;
+  font-weight: 700;
+  padding: 5px;
+  margin: 0 5px;
+  width: 40%;
+  border: none;
+  background-color: rgb(0, 0, 255);
+  color: #ffffff;
+  cursor: pointer;
+}
+
+table tbody td .del-btn{
+  background-color: rgb(249, 4, 4);
+}
+
+/* form styling start here  */
+
+
+.form_section{
+  width: 0%;
+  position: absolute;
+  top: 50%;
+  left: 70%;
+  transform: translate(-50%,-50%);
+  opacity: 0;
+  z-index: -1;
+  transition: 0.5s ease-in-out;
+}
+
+.active{
+  opacity: 1;
+  z-index: 1;
+  width: 100%;
+}
+
+.form_section .card{
+  width: 60%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.form_section .card .header{
+  background-color: chartreuse;
+}
+
+.form_section .card>i{
+  position: absolute;
+  top: 2%;
+  right: 2%;
+  background-color: rgb(224, 222, 220);
+  font-size: 24px;
+  cursor: pointer;
+}
+
+
+.card-body{
+  display: flex;
+  width: 100%;
+}
+
+.card-body .left{
+  width: 40%;
+  background-color: aquamarine;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 40px;
+  padding-top: 30px;
+}
+
+.card-body .left img{
+  background-color: #fff;
+  margin-right: 20px;
+}
+
+.card-body .left #file{
+  margin-top: 5px;
+  width: 0;
+  transition: 0.3s ease-in-out;
+}
+
+.flex{
+  display: flex;
+}
+
+.visible{
+  width: 100%;
+}
+
+.card-body .left i{
+  font-size: 20px;
+  margin-top: 5px;
+  cursor: pointer;
+}
+
+.right{
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px 20px;
+}
+
+.right .form{
+  display: flex;
+  flex-direction: column;
+}
+
+.right .form label{
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.right .form input{
+  font-size: 18px;
+  font-weight: 600;
+  border: none;
+  outline: none;
+  border-bottom: 2px solid black;
+  margin-bottom: 20px;
+}
+
+.form_btn{
+  width: 100%;
+  display: flex;
+  gap: 15px;
+}
+
+
+.form_btn .reg_btn{
+  width: 50%;
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  outline: none;
+  background-color: rgb(130, 130, 240);
+}
+
+.form_btn .up_btn{
+  width: 50%;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: rgb(161, 159, 158);
+}
+
