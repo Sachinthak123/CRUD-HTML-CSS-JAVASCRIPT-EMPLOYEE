@@ -220,11 +220,7 @@ function searchFun() {
     }
   }
 }
-
-
-
 // search filter code ends
-
 
 // clearing the data at one click
 
