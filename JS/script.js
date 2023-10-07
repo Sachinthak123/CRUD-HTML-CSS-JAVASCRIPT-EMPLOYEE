@@ -22,7 +22,7 @@ plus.addEventListener("click", function showFile() {
   fileh.style.width = "100%";
 });
 
-// Registering the employee
+// Registering the employee and set into the local storage
 var userData = [];
 var profilPic = document.getElementById("profilePic");
 var uploadPic = document.getElementById("file");
@@ -56,7 +56,7 @@ function registrationData() {
     Email: empEmail.value,
     OfficeCode: empOffice.value,
     Job: empJob.value,
-    profilPic: imgUrl == undefined ? "img/location.png" : imgUrl,
+    profilPic: imgUrl == undefined ? "img/avatar.webp" : imgUrl
   });
   // console.log(empId);
 
